@@ -1,0 +1,25 @@
+body{
+    background-color: #f5dada;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.header-menu li a{
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(250, 121, 121);
+}
