@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 body {
-  background-color: #f5e5e5;
+  background-color: #ffffff;
 }
 
 .container {
@@ -26,7 +26,8 @@ body {
 
 .searchBar input {
   width: 100%;
-  border: 1px solid rgb(250, 121, 121);
+  border: 1px solid #802c6e;
+  border-right: none;
   height: 30px;
 }
 
@@ -35,7 +36,8 @@ body {
 }
 
 .searchBar button {
-  border: none;
+  border: 1px solid #802c6e;
+  border-left: none;
   background-color: rgb(253, 152, 152);
 }
 
@@ -57,7 +59,7 @@ body {
   margin: 10px;
   padding: 10px;
   text-decoration: none;
-  color: rgb(250, 121, 121);
+  color: #802c6e;
 }
 
 .header-menu li a:hover {
@@ -78,10 +80,10 @@ body {
 .introDes {
   max-width: 50%;
   flex-basis: 50%;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
-.introDes h1{
+.introDes h1 {
   font-size: 2.5em;
 }
 
@@ -90,7 +92,7 @@ body {
   padding-bottom: 20px;
 }
 
-.introImg img{
+.introImg img {
   max-width: 100%;
 }
 
@@ -110,24 +112,49 @@ body {
 .buttons a {
   display: flex;
   justify-content: space-between;
-  border: 1px ;
+  border: 1px;
   margin-bottom: 10px;
   padding: 10px;
   text-decoration: none;
   color: white;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   width: 150px;
   height: auto;
 }
 
-.catalogue{
+.catalogue {
   background-color: rgb(107, 28, 138);
 }
 
-.github{
+.github {
   background-color: #f7aa35;
 }
 
-*{
-  font-family: 'Roboto';
+.discounts {
+  width: 90%;
+  padding-top: 10%;
+  margin: 0 auto;
+}
+
+.discountTitle {
+  border-top: 1px solid black;
+  color: #802c6e;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.img {
+  max-width: 15%;
+}
+
+.img img {
+  width: 20%;
+}
+
+* {
+  font-family: "Roboto";
 }
