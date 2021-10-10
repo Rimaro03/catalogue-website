@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 body {
   background-color: #f5e5e5;
 }
@@ -62,13 +64,70 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-
-.intro {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.main {
+  padding-top: 30px;
 }
 
-.intro img {
-    width: 50%;
+.intro {
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.introDes {
+  max-width: 50%;
+  flex-basis: 50%;
+  margin-top: 200px;
+}
+
+.introDes h1{
+  font-size: 2.5em;
+}
+
+.introDes p {
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+.introImg img{
+  max-width: 100%;
+}
+
+.introImg {
+  display: flex;
+  align-items: flex-end;
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+}
+
+.buttons a {
+  display: flex;
+  justify-content: space-between;
+  border: 1px ;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  width: 150px;
+  height: auto;
+}
+
+.catalogue{
+  background-color: rgb(107, 28, 138);
+}
+
+.github{
+  background-color: #f7aa35;
+}
+
+*{
+  font-family: 'Roboto';
 }
