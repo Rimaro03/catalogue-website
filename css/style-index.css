@@ -1,25 +1,74 @@
-body{
-    background-color: #f5dada;
+body {
+  background-color: #f5e5e5;
 }
 
 .container {
-    width: 60%;
-    margin: 0 auto;
+  width: 60%;
+  margin: 0 auto;
 }
 
-.header-container{
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  align-items: center;
+}
+
+.searchBar {
+  width: 40%;
+  display: flex;
+}
+
+.searchBar input {
+  width: 100%;
+  border: 1px solid rgb(250, 121, 121);
+  height: 30px;
+}
+
+.searchBar input:focus {
+  outline: none;
+}
+
+.searchBar button {
+  border: none;
+  background-color: rgb(253, 152, 152);
+}
+
+.header-logo img {
+  width: 50px;
+}
+
+.header-menu ul {
+  padding: 0px;
+}
+
+.header-menu li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-menu li a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(250, 121, 121);
+}
+
+.header-menu li a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+
+.intro {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.header-menu li{
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.header-menu li a{
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: none;
-    color: rgb(250, 121, 121);
+.intro img {
+    width: 50%;
 }
