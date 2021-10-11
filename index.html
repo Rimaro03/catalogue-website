@@ -10,8 +10,8 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
+    <div class="container">
+      <header>
         <div class="header-container">
           <div class="header-logo">
             <a href="index.html"
@@ -20,7 +20,11 @@
           </div>
           <div class="searchBar">
             <input type="text" placeholder="Search for a product..." />
-            <button>SEARCH</button>
+            <button>
+              <img
+                src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png"
+              />
+            </button>
           </div>
           <div class="header-menu">
             <ul>
@@ -34,38 +38,53 @@
             </ul>
           </div>
         </div>
+      </header>
 
-        <div class="main">
-          <div class="intro">
-            <div class="introDes">
-              <h1>Just a clothes shop</h1>
-              <p>A simple online shop where you can buy the clothes you like</p>
-              <div class="buttons">
-                <a href="#" class="catalogue"
-                  >Catalogue <img src="https://fakestoreapi.com/icons/book.svg"
-                /></a>
-                <a
-                  href="https://github.com/Rimaro03/catalogue-website"
-                  class="github"
-                  >GitHub <img src="https://fakestoreapi.com/icons/github.svg"
-                /></a>
-              </div>
+      <div class="main">
+        <div class="intro">
+          <div class="introDes">
+            <h1>Just a clothes shop</h1>
+            <p>A simple online shop where you can buy the clothes you like</p>
+            <div class="buttons">
+              <a href="#" class="catalogue"
+                >Catalogue <img src="https://fakestoreapi.com/icons/book.svg"
+              /></a>
+              <a
+                href="https://github.com/Rimaro03/catalogue-website"
+                class="github"
+                >GitHub <img src="https://fakestoreapi.com/icons/github.svg"
+              /></a>
             </div>
-            <div class="introImg">
-              <img src="./images/intro.svg" alt="missing" />
-            </div>
+          </div>
+          <div class="introImg">
+            <img src="./images/intro.svg" alt="missing" />
           </div>
         </div>
       </div>
-
-      <div class="discounts">
-        <div class="discountTitle">
-          <h1>Preview</h1>
-          <p>These are some clothes we sell</p>
-        </div>
-        <div class="slider"></div>
+    </div>
+    <div class="footer">
+      <div class="footerDes">
+        <h1>Who we are</h1>
+        <img src="./images/logo.png" alt="" />
+        <p>JUST A CLOTHES SHOP</p>
+        <p>via Roma 78, 76534</p>
+        <p>Cittadella Veneta, ITALY</p>
       </div>
-    </header>
+      <div class="footerServs">
+        <h1>What we do</h1>
+        <ul>
+          <li>We sell all the types of clothes</li>
+          <li>We have a trustable customer service</li>
+          <li>We have the lowest prices!</li>
+        </ul>
+      </div>
+      <div class="footerContact">
+        <h1>Contact us</h1>
+        <p>Phone: 0123456789</p>
+        <p>Mail: info@justashop.com</p>
+        <p>Pec: justashop@pec-mail.com</p>
+      </div>
+    </div>
     <script src="./js/slider.js"></script>
   </body>
 </html>
