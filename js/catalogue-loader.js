@@ -1,7 +1,7 @@
 const catalogueDiv = document.querySelector('.catalogue')
 
 const request = new XMLHttpRequest();
-const url = "https://fakestoreapi.com/products?limit=4";
+const url = "https://fakestoreapi.com/products?limit=9";
 request.open('GET', url, true);
 request.send();
 
@@ -14,28 +14,42 @@ request.onreadystatechange = (e) => {
 }
 
 function fillPage(clothes) {
+    let counter = 0;
     for (let i = 0; i < 3; i++) {
         let row = document.createElement('div')
         row.classList.add('row')
-        for (let j = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
             let card = document.createElement('div')
             card.classList.add('card')
-            let title = document.createElement('h3').innerHTML = clothes[j].title
+            let title = document.createElement('h4')
+            title.innerHTML = clothes[counter].title
             card.append(title)
 
-            let img = document.createElement('img').src = clothes[j].image
+            let img = document.createElement('img');
+            img.src = clothes[counter].image;
+
             card.append(img)
 
             let list = document.createElement('ul')
             list.classList.add('specs')
 
-            let rate = document.createElement('li').innerHTML = `Valutazione: ${clothes[j].rating.rate}`
+            let rate = document.createElement('li')
+            rate.innerHTML = `Valutazione: ${clothes[counter].rating.rate}`
             list.append(rate)
-            let category = document.createElement('li').innerHTML = `Categoria: ${clothes[j].category}`
+
+            let category = document.createElement('li')
+            category.innerHTML = `Categoria: ${clothes[counter].category}`
             list.append(category)
-            let price = document.createElement('li').innerHTML = `Prezzo: ${clothes[j].price}`
+
+            let price = document.createElement('li')
+            price.innerHTML = `Prezzo: ${clothes[counter].price}`
             list.append(price)
+
+            card.append(list)
+
             row.append(card)
+
+            counter++;
         }
         catalogueDiv.append(row)
     }
