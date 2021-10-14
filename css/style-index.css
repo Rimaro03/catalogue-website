@@ -1,245 +1,218 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-
 body {
-  background-color: #ffffff;
+    background-color: #ffffff;
 }
 
 .container {
-  width: 60%;
-  margin: 0 auto;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-logo {
-  align-items: center;
+    align-items: center;
 }
 
 .searchBar {
-  width: 40%;
-  display: flex;
+    width: 40%;
+    display: flex;
 }
 
 .searchBar input {
-  width: 100%;
-  border: 1px solid #802c6e;
-  border-right: none;
-  height: 30px;
-  border-bottom-left-radius: 0.25rem;
-  border-top-left-radius: 0.25rem;
+    width: 100%;
+    border: 1px solid #802c6e;
+    border-right: none;
+    height: 30px;
+    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
 }
 
 .searchBar input:focus {
-  outline: none;
+    outline: none;
 }
 
 .searchBar button {
-  border: 1px solid #802c6e;
-  border-left: none;
-  background-color: rgb(253, 152, 152);
-  border-bottom-right-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+    border: 1px solid #802c6e;
+    border-left: none;
+    background-color: rgb(253, 152, 152);
+    border-bottom-right-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
 }
 
 .searchBar button:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .searchBar img {
-  max-width: 90%;
+    max-width: 90%;
 }
 
 .header-logo img {
-  width: 50px;
+    width: 50px;
 }
 
 .header-menu ul {
-  padding: 0px;
+    padding: 0px;
 }
 
 .header-menu li {
-  display: inline-block;
-  margin-right: 10px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .header-menu li a {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px;
-  text-decoration: none;
-  color: #802c6e;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #802c6e;
 }
 
 .header-menu li a:hover {
-  background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .main {
-  padding-top: 2%;
+    padding-top: 2%;
 }
 
 .intro {
-  padding-top: 80px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .introDes {
-  max-width: 50%;
-  flex-basis: 50%;
-  margin-top: 5%;
+    max-width: 50%;
+    flex-basis: 50%;
+    margin-top: 5%;
 }
 
 .introDes h1 {
-  font-size: 2.5em;
+    font-size: 2.5em;
 }
 
 .introDes p {
-  margin: 0px;
-  padding-bottom: 20px;
+    margin: 0px;
+    padding-bottom: 20px;
 }
 
 .introImg img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .introImg {
-  display: flex;
-  align-items: flex-end;
-  max-width: 50%;
-  flex-basis: 50%;
+    display: flex;
+    align-items: flex-end;
+    max-width: 50%;
+    flex-basis: 50%;
 }
 
 .buttons {
-  display: flex;
-  justify-content: space-between;
-  max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
 }
 
 .buttons a {
-  display: flex;
-  justify-content: space-between;
-  border: 1px;
-  margin-bottom: 10px;
-  padding: 10px;
-  text-decoration: none;
-  color: white;
-  border-radius: 0.25rem;
-  width: 120px;
-  height: auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.25rem;
+    width: 120px;
+    height: auto;
 }
 
-.catalogue {
-  background-color: rgb(107, 28, 138);
+.catalogueButton {
+    background-color: rgb(107, 28, 138);
 }
 
-.catalogue:hover {
-  opacity: 0.8;
+.catalogueButton:hover {
+    opacity: 0.8;
 }
 
-.github {
-  background-color: #f7aa35;
+.githubButton {
+    background-color: #f7aa35;
 }
 
-.github:hover {
-
-  opacity: 0.8;
-}
-
-.discounts {
-  width: 90%;
-  padding-top: 10%;
-  margin: 0 auto;
-}
-
-.discountTitle {
-  color: #802c6e;
-}
-
-.slider {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.img {
-  max-width: 15%;
-}
-
-.img img {
-  width: 20%;
+.githubButton:hover {
+    opacity: 0.8;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-around;
-  background-color: #f5f5f5;
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 30%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30%;
 }
 
 .footer h1 {
-  color: #802c6e;
+    color: #802c6e;
 }
 
 .footerDes {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
 }
 
-
 .footerDes img {
-  max-width: 10%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0%;
-  margin-bottom: 2%;
+    max-width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 2%;
 }
 
 .footerDes p {
-  margin: 1%;
+    margin: 1%;
 }
 
 .footerServs {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
 }
 
 .footerServs h1 {
-  margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .footerServs ul li {
-  margin: 5%;
+    margin: 5%;
 }
 
 .footerContact {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
 }
 
 .footerContact p {
-  margin: 2%;
+    margin: 2%;
 }
 
 * {
-  font-family: "Roboto";
+    font-family: "Roboto";
 }
