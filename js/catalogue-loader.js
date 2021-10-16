@@ -1,18 +1,25 @@
 const catalogueDiv = document.querySelector('.catalogue')
 
-const request = new XMLHttpRequest();
-const url = "https://fakestoreapi.com/products?limit=9";
-request.open('GET', url, true);
-request.send();
+//All'apertura della pagina
+document.onreadystatechange = (e) => {
+    if (document.readyState == 'complete') {
+        const request = new XMLHttpRequest();
+        const url = "https://fakestoreapi.com/products?limit=9";
+        request.open('GET', url, true);
+        request.send();
 
-request.onreadystatechange = (e) => {
-    if (request.readyState === 4 && request.status === 200) {
-        let clothes = JSON.parse(request.responseText);
+        request.onreadystatechange = (e) => {
+            if (request.readyState === 4 && request.status === 200) {
+                let clothes = JSON.parse(request.responseText);
 
-        fillPage(clothes);
+                fillPage(clothes);
+            }
+        }
     }
 }
 
+
+//In abse ai filtri
 const typeChecks = document.querySelectorAll(".type")
 
 function checkBox() {
@@ -24,21 +31,29 @@ function checkBox() {
         }
     });
 
-    const request = new XMLHttpRequest();
-    const url = "https://fakestoreapi.com/products?limit=9";
-    request.open('GET', url, true);
-    request.send();
-
-    request.onreadystatechange = (e) => {
-        if (request.readyState === 4 && request.status === 200) {
-            let clothes = JSON.parse(request.responseText);
-
-            fillPage(clothes);
-        }
+    if (checks.length == 0) {
+        return;
     }
+
+    checks.forEach(category => {
+        const request = new XMLHttpRequest();
+        const url = `https://fakestoreapi.com/products/category/?limit=9`;
+        request.open('GET', url, true);
+        request.send();
+
+        request.onreadystatechange = (e) => {
+            if (request.readyState === 4 && request.status === 200) {
+                let clothes = JSON.parse(request.responseText);
+
+                fillPage(clothes);
+            }
+        }
+    })
 
 }
 
+
+//Carica i prodotti
 function fillPage(clothes) {
     let counter = 0;
     for (let i = 0; i < 3; i++) {
