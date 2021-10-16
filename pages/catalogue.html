@@ -41,13 +41,13 @@
                 <div class="sidebarContent">
                     <h3>FILTRI</h3>
                     <form action="">
-                        <input type="checkbox" value="capiUomo">
-                        <label for="capiUomo">Capi uomo</label><br>
-                        <input type="checkbox" value="capiDonna">
-                        <label for="capiDonna">Capi donna</label><br>
-                        <input type="checkbox" value="gioielleria">
+                        <input type="checkbox" value="capiUomo" class="type" name="men's_clothing">
+                        <label for="capiUomo">Uomo</label><br>
+                        <input type="checkbox" value="capiDonna" class="type" name="women's-clothing">
+                        <label for="capiDonna">Donna</label><br>
+                        <input type="checkbox" value="gioielleria" class="type" name="jewelery">
                         <label for="gioielleria">Gioielleria</label><br>
-                        <input type="checkbox" value="elettronica">
+                        <input type="checkbox" value="elettronica" class="type" name="electronics">
                         <label for="elettronica">Elettronica</label><br>
                         <br>
                         <input type="checkbox" value="Maglioni">
@@ -56,6 +56,8 @@
                         <label for="Magliette">Magliette</label><br>
                         <input type="checkbox" value="Pantaloni">
                         <label for="Pantaloni">Pantaloni</label><br>
+                        <br>
+                        <input type="submit" value="sumit" class="submitFilters" onclick="checkBox()">
                     </form>
                 </div>
             </div>

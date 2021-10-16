@@ -13,6 +13,32 @@ request.onreadystatechange = (e) => {
     }
 }
 
+const typeChecks = document.querySelectorAll(".type")
+
+function checkBox() {
+    let checks = [];
+    typeChecks.forEach(checkBox => {
+        console.log(checkBox);
+        if (checkBox.checked) {
+            checks.push(checkBox.name.replace('-', ' '))
+        }
+    });
+
+    const request = new XMLHttpRequest();
+    const url = "https://fakestoreapi.com/products?limit=9";
+    request.open('GET', url, true);
+    request.send();
+
+    request.onreadystatechange = (e) => {
+        if (request.readyState === 4 && request.status === 200) {
+            let clothes = JSON.parse(request.responseText);
+
+            fillPage(clothes);
+        }
+    }
+
+}
+
 function fillPage(clothes) {
     let counter = 0;
     for (let i = 0; i < 3; i++) {
